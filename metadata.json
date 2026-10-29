@@ -1,0 +1,8 @@
+{
+  "name": "SwasthSeva - Emergency Assistance & Health Companion",
+  "description": "Emergency first-aid guidance, GPS location sharing, quick Indian emergency dials (112, 108), saved emergency contacts, and multilingual AI symptom triage in Hindi, English, and Hinglish.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
