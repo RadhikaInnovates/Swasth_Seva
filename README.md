@@ -2,10 +2,9 @@
 <h2 align="center">SwasthSeva – Emergency Assistance & Health Companion</h2>
 
 <p align="center">
-  <img src="<img width="1917" height="852" alt="image" src="https://github.com/user-attachments/assets/dde5be87-465f-4c2c-8383-3dc406aa6446" />
-"
-       alt="SwasthSeva Demo"
-       width="850"/>
+  <img src="swasthseva-home.png"
+       alt="SwasthSeva Home Dashboard"
+       width="900">
 </p>
 
 About Our Project
