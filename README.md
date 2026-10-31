@@ -1,10 +1,13 @@
 SwasthSeva – Emergency Assistance & Health Companion
+<h2 align="center">SwasthSeva – Application Demo</h2>
+
 <p align="center">
-  <strong>A digital health companion for everyday health awareness, AI-assisted guidance, and emergency support.</strong>
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/75df0df5-308c-4aed-991f-db64c48edfad"
-       alt="SwasthSeva Application Demo"
-       width="850">
+  <img
+    src="<img width="1280" height="577" alt="Recording 2026-10-29 223308" src="https://github.com/user-attachments/assets/7454709c-aa5b-4abb-bd5c-cb75d7b5904c" />
+"
+    alt="SwasthSeva Application Demo"
+    width="850"
+  />
 </p>
 About Our Project
 We developed SwasthSeva as a health-care companion prototype that brings common health information, AI-assisted health guidance, preventive-care resources, mental-wellness access, and emergency-support options together in one application.
