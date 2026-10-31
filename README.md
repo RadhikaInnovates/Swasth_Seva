@@ -21,12 +21,14 @@ Contributing
 License
 
 What We Built
+
 We built a prototype of SwasthSeva, a digital health companion that combines everyday health education with quick access to emergency-related actions.
 Instead of making users navigate separate resources for common health concerns, prevention tips, mental wellness, and emergency contacts, the prototype presents these capabilities through a single interface. Users can explore common health problems, view guidance organized by severity, ask health-related questions through an AI-assistant interface, review daily wellness tips, and access emergency options.
 The prototype also includes a user-profile and account-creation flow intended to support personalized guidance. The profile form displays optional health information fields such as age, height, weight, allergies, existing conditions, current medications, and an emergency contact. These details could help personalize future guidance if securely stored and used with appropriate consent.
 The interface includes a dark theme, category-based cards, navigation for Home, Problems, AI assistance, Learn, and Profile, plus language and display controls. The design emphasizes clear visual sections and prominent emergency actions.
 
 The Problem We Are Addressing
+
 People may not know where to begin when they experience a common symptom, want to prevent illness, or need to find emergency contact options quickly. Health information can also be difficult to understand, scattered across different sources, or unavailable in a user's preferred language.
 SwasthSeva aims to make basic health information easier to discover by organizing it into accessible sections. It is intended to support health awareness and help users understand possible next steps—not to independently diagnose a condition or replace professional care.
 
