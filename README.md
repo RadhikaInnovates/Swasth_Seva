@@ -1,228 +1,214 @@
 SwasthSeva – Emergency Assistance & Health Companion
-SwasthSeva is a health and emergency-support application prototype designed to bring everyday health information, AI-assisted symptom guidance, first-aid information, preventive care, mental wellness resources, and emergency shortcuts together in one place.
+<p align="center">
+  <strong>A digital health companion for everyday health awareness, AI-assisted guidance, and emergency support.</strong>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/75df0df5-308c-4aed-991f-db64c48edfad"
+       alt="SwasthSeva Application Demo"
+       width="850">
+</p>
+About Our Project
+We developed SwasthSeva as a health-care companion prototype that brings common health information, AI-assisted health guidance, preventive-care resources, mental-wellness access, and emergency-support options together in one application.
 
-The goal is to help users find understandable health guidance quickly and make important emergency actions easier to access. The interface is designed with multilingual support in mind, including English, Hindi, Marathi, Tamil, and Marwari.
-Project status: Prototype / demonstration build. Features shown in the interface may require further integration, testing, and validation before real-world use.
+We wanted to make basic health information easier to find and understand. Instead of switching between different sources for common health concerns, wellness tips, and emergency contact options, users can explore these sections through one organized interface.
 
-Important medical disclaimer: SwasthSeva is an informational support tool, not a replacement for a qualified doctor, medical diagnosis, or professional emergency services. In a life-threatening situation, contact the appropriate local emergency service immediately. Do not delay urgent care to use the app.
+Our application is designed with a simple dashboard, clear categories, and multilingual interaction in mind. It is intended to support health awareness and help users understand possible next steps. It is not a medical diagnosis tool and does not replace doctors or professional emergency services.
+The Problem We Aim to Solve
+When people experience a common health concern, they may not know where to find understandable information or what kind of help to seek. Health information can be scattered, difficult to understand, or unavailable in a language they are comfortable with. Emergency options should also be easy to locate when time matters.
 
-Table of Contents
-- What We Built
-- The Problem We Are Addressing
-- Main Features
-- How the App Works
-- User Journey
-- Who Can Benefit
-- Why SwasthSeva Is Useful
-- Prototype Scope and Limitations
-- Future Scope
-- Safety and Privacy Considerations
+Through SwasthSeva, we aim to:
+- Bring common health information into one accessible platform.
+- Make it easier to explore symptoms and related health topics.
+- Provide an AI-assistant interface for health-related questions.
+- Encourage preventive care and everyday wellness.
+- Keep emergency-support options visible and easy to reach.
+- Make the experience more accessible through multiple languages.
 
-What We Built
-We built a prototype of SwasthSeva, a digital health companion that combines everyday health education with quick access to emergency-related actions.
+What We Have Built
 
-Instead of making users navigate separate resources for common health concerns, prevention tips, mental wellness, and emergency contacts, the prototype presents these capabilities through a single interface. Users can explore common health problems, view guidance organized by severity, ask health-related questions through an AI-assistant interface, review daily wellness tips, and access emergency options.
+We have designed and developed a prototype with the following major sections:
 
-The prototype also includes a user-profile and account-creation flow intended to support personalized guidance. The profile form displays optional health information fields such as age, height, weight, allergies, existing conditions, current medications, and an emergency contact. These details could help personalize future guidance if securely stored and used with appropriate consent.
-
-The interface includes a dark theme, category-based cards, navigation for Home, Problems, AI assistance, Learn, and Profile, plus language and display controls. The design emphasizes clear visual sections and prominent emergency actions.
-The Problem We Are Addressing
-People may not know where to begin when they experience a common symptom, want to prevent illness, or need to find emergency contact options quickly. Health information can also be difficult to understand, scattered across different sources, or unavailable in a user's preferred language.
-
-SwasthSeva aims to make basic health information easier to discover by organizing it into accessible sections. It is intended to support health awareness and help users understand possible next steps—not to independently diagnose a condition or replace professional care.
-
-Main Features
 1. Home Dashboard
-The home screen acts as the central starting point for the application. It includes:
-- A search field for symptoms or health conditions.
-- Quick-access cards for Common Problems, Emergency Help, Prevention Tips, and Mental Health.
-- A prominent emergency/SOS entry point.
-- Featured common health concerns.
-- Shortcuts to the AI health assistant and other app sections.
-Purpose: Help users reach the most relevant area without having to search through the entire application.
+We created a central dashboard that gives users quick access to the main areas of the application.
 
-2. AI Health Assistant — “aiDoctor / SwasthSeva AI Saathi”
-The prototype includes an AI-assistant interface for users to enter or speak about a health concern. The interface indicates support for English, Hindi, Marathi, Tamil, and Marwari.
+It includes:
+- Search for symptoms or health conditions.
+- Shortcuts to common health problems.
+- Emergency-help access.
+- Prevention and daily wellness tips.
+- Mental-health entry point.
+- Quick access to the AI health assistant.
+How it helps: Users can find the section they need without navigating through multiple unrelated pages.
 
-The assistant experience is designed to support questions about symptoms, general health information, first-aid guidance, and self-care. The interface also displays the health topic being discussed, helping keep the conversation connected to the selected concern.
+2. AI Health Assistant – SwasthSeva AI Saathi
+We included an AI-assistant interface where users can ask health-related questions and explore general health information.
 
-Purpose: Make health information easier to ask for and understand, including for users who prefer regional languages.
+The interface is designed with multilingual support in mind, including:
+- English
+- Hindi
+- Marathi
+- Tamil
+- Marwari
+We intend this assistant to make health information easier to ask for and understand, especially for users who are more comfortable with regional languages.
 
-Important: AI-generated health guidance can be incomplete or incorrect. Any production implementation should use carefully reviewed medical content, appropriate safety checks, clear escalation advice, and testing across supported languages.
+The project configuration includes the Google Gemini API package and a GEMINI_API_KEY environment-variable example. The AI service must be configured with a valid key to make the relevant API calls.
 
-3. Symptom Triage and Severity Guidance
-The prototype presents health guidance in three visible severity categories:
-- Mild / Self-Care
-- Urgent Medical Attention
-- Life-Threatening Emergency
-A health-condition page can organize information into sections such as:
-- Self-care and remedies
-- Safe-medicine information
-- Prevention and exercises
-- Questions and answers
-- Immediate action steps
-For example, the prototype demonstrates a page for tonsillitis and sore throat with an overview, possible causes, prevention tips, and action-oriented guidance.
+Important: AI responses can be incomplete or inaccurate. Users should not rely on them as a diagnosis or as a replacement for professional medical advice.
 
-Purpose: Present information in a structured way so users can better understand the general level of concern and possible next steps.
+3. Common Health Problems and Symptom Guidance
+We organized common health topics into dedicated sections so users can explore information relevant to their concerns.
 
-Limitation: The visible severity categories are guidance in the prototype, not a clinically validated diagnosis or a substitute for professional triage. They must not be treated as a guarantee that a condition is safe.
-
-4. Emergency Assistance and SOS
-The emergency panel provides quick access to emergency contact options displayed in the prototype, including:
-- Police — 100
-- Ambulance — 108
-- Fire service — 101
-- National emergency — 112
-It also displays an SOS action intended to call emergency services, alert saved contacts, and share the user's GPS location. The interface includes options for WhatsApp alerts, SMS, refreshing GPS information, and reviewing location-permission status.
-
-Purpose: Reduce the number of steps required to reach emergency-related actions.
-
-Important implementation note: The presence of a button in a prototype does not prove that calls, messages, contact alerts, or location sharing work in every environment. These flows must be integrated with the relevant device/browser capabilities, tested on supported devices, and clearly explain permissions and delivery status. Emergency numbers and service availability can vary by location; verify them before release. Never send an SOS or share a user's location without an intentional user action and appropriate consent.
-
-5. Common Health Problems
-The prototype provides category-based entries for common concerns. Examples visible in the interface include:
+Examples shown in the prototype include:
 - Tonsillitis and sore throat
 - Earache and ear infection
 - Nasal congestion and sinus pain
-- Headache and tension headache
-- Migraine headache
+- Headache and migraine
 - Dizziness and vertigo
 - Acidity, GERD, and heartburn
 - Stomach ache and abdominal cramps
 - Diarrhea and loose motions
-- Menstrual cramps and painful menstruation
-- Heavy menstrual bleeding
-- Back pain and lower back strain
-The health-condition pages are designed to present a clinical overview, possible causes, severity guidance, self-care information, and prevention suggestions.
+- Menstrual cramps
+- Back pain and lower-back strain
+The condition-information experience is designed to organize content such as:
+- Overview of the condition
+- Possible causes
+- Severity-related guidance
+- Self-care information
+- Prevention tips
+- Frequently asked questions and next steps
+We have used three broad levels to organize the guidance:
+- Mild / Self-Care
+- Urgent Medical Attention
+- Life-Threatening Emergency
+These categories are intended to help users understand general levels of concern. They are not a clinically validated diagnosis or a substitute for professional triage.
 
-Purpose: Give users a more organized way to explore general information about common health concerns.
+4. Emergency Assistance and SOS Interface
+We designed an emergency-support section to make important contact options easier to find.
 
-6. Prevention Tips and Daily Wellness
-The Learn section includes daily health tips and expandable guidance. Topics visible in the prototype include:
+The prototype displays emergency shortcuts such as:
+- Police – 100
+- Ambulance – 108
+- Fire service – 101
+- National emergency – 112
+The interface also includes an SOS flow concept with options related to:
+- Emergency calling
+- Alerting a saved emergency contact
+- GPS location access
+- SMS and WhatsApp alerts
+- Checking or refreshing location information
+Please note: These are the emergency options and interaction flows represented in our prototype. Actual calling, message delivery, contact alerts, and GPS sharing depend on device permissions, browser support, service integration, and testing. Users should contact local emergency services directly in a real emergency and should not delay urgent care while using the app.
+
+5. Prevention Tips and Daily Wellness
+We added a learning and prevention area to encourage healthy everyday habits.
+
+Topics represented in the prototype include:
 - Staying hydrated
-- Hand hygiene
-- Daily exercise
-- Healthy sleep
-- Balanced diet
-The content is intended to encourage practical, everyday wellness habits and preventive awareness.
+- Maintaining hand hygiene
+- Regular physical activity
+- Healthy sleep habits
+- Balanced nutrition
+How it helps: We want users to explore preventive health information, not just information about illnesses.
 
-Purpose: Support health awareness before a problem becomes urgent, rather than focusing only on illness.
+6. Mental Health and Well-being
+We included a dedicated Mental Health entry point on the dashboard so mental wellness is visible alongside physical-health information.
 
-7. Mental Health and Well-being
-Mental Health is available as a dedicated entry point on the dashboard.
+This section can be expanded with reviewed educational resources and appropriate support information as the project develops.
 
-Purpose: Make mental wellness easier to discover alongside physical-health resources. The depth of the mental-health content and any support workflows should be confirmed and expanded during implementation.
+7. User Profile and Health Details
+We designed an account/profile flow with optional fields that can support a more personalized experience.
 
-8. User Account and Optional Medical Profile
-The account-creation interface includes optional profile fields such as:
+The profile interface includes fields for:
 - Age and gender preference
 - Height and weight
 - Known allergies
 - Existing health conditions
 - Current medications
 - Emergency contact name and phone number
-The profile is intended as a foundation for personalized assistance. In a production version, users should be able to understand what data is collected, why it is needed, how it is stored, and how to edit or delete it.
+These details are intended to provide context for future personalization. Any real collection or storage of health information must be protected and handled with clear user consent.
 
-Purpose: Provide a pathway toward more context-aware health information while keeping personalization transparent and consent-based.
+8. Multilingual and User-Friendly Interface
+We designed the experience to support multiple languages and make health information easier to access for a wider range of users.
 
-9. Multilingual Interface
-The prototype displays language controls and demonstrates interface content in multiple languages. The AI-assistant screen identifies English, Hindi, Marathi, Tamil, and Marwari as supported languages.
+The interface uses:
+- Clearly separated navigation sections
+- Category cards and icons
+- Visual severity indicators
+- Expandable information areas
+- Prominent emergency entry points
+- Display and language controls
 
-Purpose: Make the application more accessible to users who are more comfortable with regional languages.
+How Our App Works
+The intended user journey through SwasthSeva is:
+1. Open the app: The user lands on the Home Dashboard.
+2. Find a health topic: The user searches for a symptom or browses the common-problems section.
+3. Explore information: The user views the selected topic, its overview, possible causes, and available guidance.
+4. Ask the AI assistant: The user can enter a health-related question through the assistant interface.
+5. Learn preventive habits: The user visits the Learn section for daily wellness tips.
+6. Access emergency options: The user opens Emergency Help to view the available emergency shortcuts and SOS-related interface.
+7. Manage profile details: The user can explore the optional profile fields intended for future personalized support.
 
-All translated health and emergency content should be reviewed for accuracy and clarity by qualified reviewers or fluent speakers before production use.
+Application Flow
+                  SWASTHSEVA
+                      |
+                Home Dashboard
+                      |
+       +--------------+--------------+
+       |              |              |
+   Health Topics   AI Assistant   Emergency Help
+       |              |              |
+   Select Topic    Ask Question   Emergency Options
+       |              |              |
+   View Guidance  Health Info     SOS-related Flow
+       |
+   Prevention & Self-care
 
-10. Navigation and User Experience
-The interface includes navigation for Home, Problems, AI assistance, Learn, and Profile. It uses cards, icons, severity colors, expandable information sections, and prominent emergency controls.
+       +-----------------------------+
+       |                             |
+   Learn / Wellness              User Profile
+       |                             |
+   Daily Health Tips          Optional Health Details
 
-Purpose: Keep the application organized and make important functions easier to find, especially when users may be stressed or in a hurry.
+Technology Stack
 
-How the App Works
+We have used the following technologies in our project:
 
-The prototype's intended user flow is:
-1. Open the home dashboard. The user sees health categories, search, AI assistance, and emergency access.
-2. Choose a health concern. The user can browse common problems or search for a symptom or condition.
-3. Review structured guidance. The condition page organizes general information into an overview, severity levels, self-care, medicine information, prevention, and questions.
-4. Ask the AI assistant if needed. The user can enter a health question through the assistant interface and, where supported by the implementation, use voice input.
-5. Explore prevention resources. The user can open the Learn section for daily wellness tips.
-6. Use emergency options when necessary. The emergency panel presents emergency contact shortcuts and intended SOS, messaging, and location-sharing actions.
-7. Set up a profile if desired. The account/profile flow provides optional health and emergency-contact fields for future personalization.
-This describes the intended experience shown by the prototype. Actual behavior depends on which integrations are implemented and configured in the codebase.
+HTML - Structuring the application interface
+CSS - Styling and designing the user interface
+Python - Backend logic and application functionality
+GitHub - Source code management and version control
 
-User Journey
-Home Dashboard
-    |
-    +--> Search / Common Problems
-    |        |
-    |        +--> Condition Overview
-    |                 |
-    |                 +--> Severity Guidance
-    |                 +--> Self-care / Prevention
-    |                 +--> Ask AI Assistant
-    |
-    +--> Emergency Help
-    |        |
-    |        +--> Emergency Call Shortcuts
-    |        +--> Intended SOS / Contact Alert
-    |        +--> Intended GPS Location Sharing
-    |
-    +--> Prevention Tips / Learn
-    |
-    +--> Mental Health
-    |
-    +--> Profile / Optional Medical Information
+Development Approach
+We organized our project to provide a user-friendly healthcare experience through a clean interface, structured health information, AI-assisted guidance, and emergency-support features.
 
-Who can Benefit
-SwasthSeva is designed with the following potential users in mind:
-- People looking for understandable information about common health concerns.
-- Users who want to learn everyday prevention and wellness habits.
-- Users who prefer health information in supported regional languages.
-- People who want emergency contact options to be easy to find.
-- Users who may benefit from having relevant health information organized in one place.
-The application should not be presented as a replacement for a doctor, ambulance service, emergency dispatcher, or other qualified professional.
+Current Project Status
+SwasthSeva is a prototype / demonstration project. The repository and interface show the direction and main user experience we are building. Some features may need further integration, validation, or device-specific testing before they can be considered production-ready.
 
-Why SwasthSeva Is Useful
-- One place for several needs: Health education, prevention, AI assistance, and emergency shortcuts are brought together.
-- Clear organization: Health concerns and advice are grouped into dedicated sections.
-- Emergency visibility: Emergency-related actions are prominent in the interface.
-- Language accessibility: The prototype is designed around multilingual interaction.
-- Preventive awareness: Wellness content encourages everyday healthy habits.
-- Potential personalization: Optional profile fields can support future context-aware experiences if handled safely.
-
-Prototype Scope and Limitations
-This repository should accurately distinguish what is demonstrated in the interface from what has been fully implemented and tested.
-
-The supplied prototype video demonstrates the user interface and interaction flow, but it does not by itself verify the underlying integrations or production readiness. Before describing a feature as fully operational, verify it in the source code and test it end to end.
-
-Areas that may require additional implementation or validation include:
-- Connecting the AI assistant to a reliable model or health-information service.
-- Medical review of health content, severity guidance, and multilingual translations.
-- Validating that SOS calls, SMS/WhatsApp alerts, saved contacts, and GPS sharing work on supported devices.
-- Secure account authentication and protected storage of profile information.
-- Consent, privacy controls, and secure handling of sensitive medical information.
-- Accessibility, responsive behavior, error handling, and device/browser compatibility.
-- Testing emergency flows and ensuring that failures are clearly communicated.
-The technology stack, setup commands, and backend services should be documented from the actual source repository rather than guessed from the screen recording.
+In particular, we need to verify:
+- AI responses and safety handling.
+- Accuracy and medical review of health content.
+- Emergency calling and message-delivery behavior.
+- GPS permissions and location-sharing behavior.
+- Secure handling of profile and health information.
+- Responsive behavior and accessibility across devices.
 
 Future Scope
-Possible next steps for the project include:
-1. Reliable AI integration: Add a clearly identified assistant service with safety-oriented responses and escalation rules.
-2. Clinically reviewed content: Review condition information and severity guidance with qualified medical professionals.
-3. Emergency-flow validation: Test calls, SMS, messaging links, contact alerts, and location sharing on supported devices.
-4. Secure profile management: Add transparent consent, secure storage, and profile editing/deletion.
-5. Improved accessibility: Test keyboard navigation, screen readers, contrast, font scaling, and mobile layouts.
-6. Expanded language review: Validate translations and health terminology across all supported languages.
-7. Testing and monitoring: Add unit, integration, and usability tests, especially for safety-critical flows.
-8. Clear source and setup documentation: Add the verified stack, installation instructions, environment variables, and deployment steps to this README.
+We plan to improve SwasthSeva further through:
+1. Enhanced AI assistance: Improve the assistant experience with reliable integration, clear limitations, and safe escalation guidance.
+2. Medically reviewed information: Review health topics and severity guidance with qualified professionals.
+3. Verified emergency workflows: Test emergency calling, alerts, and location sharing on supported devices.
+4. Secure user profiles: Add appropriate authentication, consent, and protected health-data handling.
+5. Better accessibility: Improve keyboard support, screen-reader compatibility, contrast, and responsive layouts.
+6. Language improvements: Review translations and health terminology across supported languages.
+7. Testing: Add unit, integration, and usability tests, especially for safety-related features.
 
-Safety and Privacy Considerations
-Because this application deals with health-related information and emergency workflows:
-- Do not treat AI responses as a medical diagnosis.
-- Clearly tell users when urgent professional care is needed.
-- Do not recommend starting, stopping, or changing medication without appropriate professional guidance.
-- Collect only the personal data that is necessary.
-- Obtain explicit, informed consent before storing medical details or sharing location.
-- Protect health and emergency-contact information with appropriate security controls.
-- Do not trigger emergency calls or messages silently.
-- Explain when location, messaging, or network permissions are unavailable.
-- Do not claim that a message or alert was delivered unless delivery can actually be confirmed.
+Safety and Privacy Disclaimer
+SwasthSeva is intended for general health awareness and informational support. It does not provide a confirmed medical diagnosis and must not replace a qualified healthcare professional.
+- Do not delay emergency care to use this application.
+- Do not make medication decisions based only on AI-generated responses.
+- Seek professional medical help for concerning or worsening symptoms.
+- Emergency calls and location sharing should require clear user action and appropriate permissions.
+- Health details and emergency-contact information must be handled securely and with user consent.
+
+Our Goal
+With SwasthSeva, we aim to make everyday health information easier to access, promote preventive awareness, and bring useful health and emergency-support options together in one user-friendly platform.
+
+We see this project as a step toward a more accessible and supportive digital health experience.
