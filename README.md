@@ -3,8 +3,7 @@ SwasthSeva – Emergency Assistance & Health Companion
 
 <p align="center">
   <img
-    src="<img width="1280" height="577" alt="Recording 2026-10-29 223308" src="https://github.com/user-attachments/assets/7454709c-aa5b-4abb-bd5c-cb75d7b5904c" />
-"
+    src="app-demo.gif"
     alt="SwasthSeva Application Demo"
     width="850"
   />
