@@ -141,27 +141,6 @@ The intended user journey through SwasthSeva is:
 6. Access emergency options: The user opens Emergency Help to view the available emergency shortcuts and SOS-related interface.
 7. Manage profile details: The user can explore the optional profile fields intended for future personalized support.
 
-Application Flow
-                  SWASTHSEVA
-                      |
-                Home Dashboard
-                      |
-       +--------------+--------------+
-       |              |              |
-   Health Topics   AI Assistant   Emergency Help
-       |              |              |
-   Select Topic    Ask Question   Emergency Options
-       |              |              |
-   View Guidance  Health Info     SOS-related Flow
-       |
-   Prevention & Self-care
-
-       +-----------------------------+
-       |                             |
-   Learn / Wellness              User Profile
-       |                             |
-   Daily Health Tips          Optional Health Details
-
 Technology Stack
 
 We have used the following technologies in our project:
